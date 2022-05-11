@@ -1,0 +1,47 @@
+#buttons {
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+.number{
+    width: 85px;
+    height: 65px;
+}
+#bottom{
+    display: flex;
+    height: 360px;
+}
+#divide, #multiply, #subtract, #add, #equals{
+    width: 85px;
+    height: 65px;
+}
+#left, #right{
+
+}
+button{
+    margin: 12px;
+    border-radius: 5px;
+}
+#top{
+    display: flex;
+    justify-content: center;
+}
+#clear, #delete{
+    height: 65px;
+    width: 212px;
+}
+#display{
+    width: 450px;
+    height: 100px;
+    background-color: bisque;
+    position: relative;
+    font-size: 60px;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#text{
+    margin: 12px;
+}
