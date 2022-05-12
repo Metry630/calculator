@@ -16,12 +16,10 @@
     width: 85px;
     height: 65px;
 }
-#left, #right{
-
-}
 button{
     margin: 12px;
     border-radius: 5px;
+    font-size: 25px;
 }
 #top{
     display: flex;
@@ -44,4 +42,12 @@ button{
 }
 #text{
     margin: 12px;
+    width: 450px;
+    flex-wrap: wrap;
+    text-overflow: clip clip;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
