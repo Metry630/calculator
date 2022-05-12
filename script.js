@@ -47,6 +47,28 @@ const deleter = document.querySelector("#delete");
 const clearer = document.querySelector('#clear');
 clear()
 
+window.addEventListener('keydown', keyboardInput)
+function keyboardInput(e) {
+    if (e.key === '0') displayZero();
+    if (e.key === '1') displayOne()
+    if (e.key === '2') displayTwo()
+    if (e.key === '3') displayThree()
+    if (e.key === '4') displayFour()
+    if (e.key === '5') displayFive()
+    if (e.key === '6') displaySix()
+    if (e.key === '7') displaySeven()
+    if (e.key === '8') displayEight()
+    if (e.key === '9') displayNine()
+    if (e.key === '.') displayPoint()
+    if (e.key === '=' || e.key === 'Enter') equals()
+    if (e.key === 'Backspace') deleting()
+    if (e.key === 'Escape') clear()
+    if (e.key === '+') displayAdd()
+    if(e.key === '-') displaySubtract()
+    if(e.key === '/') displayDivide()
+    if(e.key === "*") displayMultiply()
+}
+
 equals.addEventListener('click', displayEquals);
 dividing.addEventListener('click', ()=>{
     displayDivide();
@@ -173,3 +195,96 @@ function displayEquals(){
         }
     }
 }
+
+function displayOne(){
+    if(lastPressed === "operator"){
+        text.textContent = "1";
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + '1'
+        lastPressed = 'num';
+    }
+}
+function displayTwo(){
+    if(lastPressed === "operator"){
+        text.textContent = "2";
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + '2'
+        lastPressed = 'num';
+    }
+}
+function displayThree(){
+    if(lastPressed === "operator"){
+        text.textContent = "3";
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + '3'
+        lastPressed = 'num';
+    }
+}
+function displayFour(){
+    if(lastPressed === "operator"){
+        text.textContent = "4";
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + '4'
+        lastPressed = 'num';
+    }
+}
+function displayFive(){
+    if(lastPressed === "operator"){
+        text.textContent = "5";
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + '5'
+        lastPressed = 'num';
+    }
+}
+function displaySix(){
+    if(lastPressed === "operator"){
+        text.textContent = "6";
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + '6'
+        lastPressed = 'num';
+    }
+}
+function displaySeven(){
+    if(lastPressed === "operator"){
+        text.textContent = "7";
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + '7'
+        lastPressed = 'num';
+    }
+}
+function displayEight(){
+   if(lastPressed === "operator"){
+       text.textContent = "8";
+       lastPressed = 'num';
+   }else{
+    text.textContent = text.textContent + '8'
+    lastPressed = 'num';
+   }
+}
+function displayNine(){
+    if(lastPressed === "operator"){
+        text.textContent = "9";
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + '9'
+        lastPressed = 'num';
+    }
+}
+function displayZero(){
+    if(lastPressed === "operator"){
+        text.textContent = "0";
+        lastPressed = 'num';
+    }else if(text.textContent === "0"){
+        lastPressed = 'num';
+    }else{
+        text.textContent = text.textContent + "0";
+        lastPressed = 'num';
+    }
+    }
