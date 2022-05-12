@@ -157,7 +157,16 @@ function displayEquals(){
     if(lastPressed !== "operator"){
         if(currentOperator !== ""){
             values.push(text.textContent.replace(/[^0-9.]/g, ''))
-            let divResult = operate(values[values.length - 2], values[values.length - 1], currentOperator)
+            let divResult = operate(values[values.length - 2], values[values.length - 1], currentOperator);
+            let keeper = divResult;
+            if(divResult.toString().length > 13){
+                divResult = keeper.toExponential();
+                let arr = divResult.split('e')
+                console.log(arr)
+                arr[0] = round(arr[0])
+                divResult = arr[0] + 'e' + arr[1];
+
+            }
             text.textContent = `${divResult}`;
             currentOperator = "";
             lastPressed = "num";
