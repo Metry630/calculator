@@ -2,9 +2,13 @@
     display: flex;
     width: 450px;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: whitesmoke;
 }
 .number{
+    width: 85px;
+    height: 65px;
+}
+#point{
     width: 85px;
     height: 65px;
 }
@@ -15,11 +19,13 @@
 #divide, #multiply, #subtract, #add, #equals{
     width: 85px;
     height: 65px;
+    background-color: grey;
 }
 button{
     margin: 12px;
     border-radius: 5px;
     font-size: 25px;
+    border-style: solid;
 }
 #top{
     display: flex;
@@ -29,22 +35,34 @@ button{
     height: 65px;
     width: 212px;
 }
+#clear{
+    background-color: lightblue;
+}
+#delete{
+    background-color: lightcoral;
+}
 #display{
     width: 450px;
     height: 100px;
-    background-color: bisque;
+    background-color: black;
     position: relative;
     font-size: 60px;
     text-align: end;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
 }
 #text{
     margin: 12px;
     width: 450px;
     flex-wrap: wrap;
     text-overflow: clip clip;
+    color: white;
+}
+#calculator{
+    border-radius: 15px;
+    border-color: lightslategray;
 }
 body {
     display: flex;
