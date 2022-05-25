@@ -201,7 +201,7 @@ function displayOne(){
     if(lastPressed === "operator"){
         text.textContent = "1";
         lastPressed = 'num';
-    }else{
+    }else if(text.textContent.length <= 13){
         text.textContent = text.textContent + '1'
         lastPressed = 'num';
     }
@@ -210,7 +210,7 @@ function displayTwo(){
     if(lastPressed === "operator"){
         text.textContent = "2";
         lastPressed = 'num';
-    }else{
+    }else if(text.textContent.length <= 13){
         text.textContent = text.textContent + '2'
         lastPressed = 'num';
     }
@@ -219,7 +219,7 @@ function displayThree(){
     if(lastPressed === "operator"){
         text.textContent = "3";
         lastPressed = 'num';
-    }else{
+    }else if(text.textContent.length <= 13){
         text.textContent = text.textContent + '3'
         lastPressed = 'num';
     }
@@ -228,7 +228,7 @@ function displayFour(){
     if(lastPressed === "operator"){
         text.textContent = "4";
         lastPressed = 'num';
-    }else{
+    }else if(text.textContent.length <= 13){
         text.textContent = text.textContent + '4'
         lastPressed = 'num';
     }
@@ -237,7 +237,7 @@ function displayFive(){
     if(lastPressed === "operator"){
         text.textContent = "5";
         lastPressed = 'num';
-    }else{
+    }else if(text.textContent.length <= 13){
         text.textContent = text.textContent + '5'
         lastPressed = 'num';
     }
@@ -246,7 +246,7 @@ function displaySix(){
     if(lastPressed === "operator"){
         text.textContent = "6";
         lastPressed = 'num';
-    }else{
+    }else if(text.textContent.length <= 13){
         text.textContent = text.textContent + '6'
         lastPressed = 'num';
     }
@@ -255,7 +255,7 @@ function displaySeven(){
     if(lastPressed === "operator"){
         text.textContent = "7";
         lastPressed = 'num';
-    }else{
+    }else if(text.textContent.length <= 13){
         text.textContent = text.textContent + '7'
         lastPressed = 'num';
     }
@@ -264,7 +264,7 @@ function displayEight(){
    if(lastPressed === "operator"){
        text.textContent = "8";
        lastPressed = 'num';
-   }else{
+   }else if(text.textContent.length <= 13){
     text.textContent = text.textContent + '8'
     lastPressed = 'num';
    }
@@ -273,7 +273,7 @@ function displayNine(){
     if(lastPressed === "operator"){
         text.textContent = "9";
         lastPressed = 'num';
-    }else{
+    }else if(text.textContent.length <= 13){
         text.textContent = text.textContent + '9'
         lastPressed = 'num';
     }
