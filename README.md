@@ -1,2 +1,2 @@
 # calculator
-Simple calculator project with keyboard and click functionality
+Simple calculator project used for learning
