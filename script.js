@@ -125,12 +125,12 @@ function deleting(){
 function displayDivide(){
     if(lastPressed !== "operator"){
         if(currentOperator === ""){
-            values.push(text.textContent.replace(/[^0-9.]/g, ''));
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''));
             currentOperator = "divides";
             lastPressed = "operator";
         }else{
             displayEquals()
-            values.push(text.textContent.replace(/[^0-9.]/g, ''));
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''));
             currentOperator = "divides";
             lastPressed = "operator";
         }
@@ -139,12 +139,12 @@ function displayDivide(){
 function displayMultiply(){
     if(lastPressed !== "operator"){
         if(currentOperator === ""){
-            values.push(text.textContent.replace(/[^0-9.]/g, ''));
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''));
             currentOperator = "multiplies";
             lastPressed = "operator";
         }else{
             displayEquals()
-            values.push(text.textContent.replace(/[^0-9.]/g, ''));
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''));
             currentOperator = "multiplies";
             lastPressed = "operator";
         }
@@ -153,12 +153,12 @@ function displayMultiply(){
 function displaySubtract(){
     if(lastPressed !== "operator"){
         if(currentOperator === ""){
-            values.push(text.textContent.replace(/[^0-9.]/g, ''));
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''));
             currentOperator = "subtracts";
             lastPressed = "operator";
         }else{
             displayEquals()
-            values.push(text.textContent.replace(/[^0-9.]/g, ''));
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''));
             currentOperator = "subtracts";
             lastPressed = "operator";
         }
@@ -167,12 +167,12 @@ function displaySubtract(){
 function displayAdd(){
     if(lastPressed !== "operator"){
         if(currentOperator === ""){
-            values.push(text.textContent.replace(/[^0-9.]/g, ''));
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''));
             currentOperator = "adds";
             lastPressed = "operator";
         }else{
             displayEquals()
-            values.push(text.textContent.replace(/[^0-9.]/g, ''));
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''));
             currentOperator = "adds";
             lastPressed = "operator";
         }
@@ -181,7 +181,7 @@ function displayAdd(){
 function displayEquals(){
     if(lastPressed !== "operator"){
         if(currentOperator !== ""){
-            values.push(text.textContent.replace(/[^0-9.]/g, ''))
+            values.push(text.textContent.replace(/[^0-9.-]/gm, ''))
             let divResult = operate(values[values.length - 2], values[values.length - 1], currentOperator);
             let keeper = divResult;
             if(divResult.toString().length > 13){
